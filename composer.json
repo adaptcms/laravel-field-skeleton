@@ -1,0 +1,47 @@
+{
+  "name": ":lc:vendor/:lc:package",
+  "description": ":uc:vendor :uc:package",
+  "license": ":license",
+  "authors": [
+    {
+      "name": ":author_name",
+      "email": ":author_email",
+      "homepage": "https://www.adaptcms.com/packages/:lc:vendor/:lc:package"
+    }
+  ],
+  "homepage": "https://github.com/:lc:vendor/:lc:package",
+  "keywords": [
+    "Laravel",
+    ":uc:vendor",
+    ":uc:package"
+  ],
+  "require": {
+    "illuminate/support": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "mockery/mockery": "^1.3",
+    "orchestra/testbench": "^5.1",
+    "sempro/phpunit-pretty-print": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      ":uc:vendor\\:uc:package\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      ":uc:vendor\\:uc:package\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        ":uc:vendor\\:uc:package\\:uc:packageServiceProvider"
+      ],
+      "aliases": {
+        ":uc:package": ":uc:vendor\\:uc:package\\Facades\\:uc:package"
+      }
+    }
+  }
+}
