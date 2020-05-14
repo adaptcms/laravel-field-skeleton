@@ -1,6 +1,6 @@
 <?php
 
-namespace Adaptcms\:uc:vendor\:uc:package;
+namespace :uc:vendor\:uc:package\Field;
 
 use Adaptcms\Fields\Field;
 
