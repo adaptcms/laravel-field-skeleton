@@ -2,7 +2,7 @@
 
 namespace :uc:vendor\:uc:package;
 
-class :uc:package
+class Field:uc:package
 {
     // Build wonderful things
 }
