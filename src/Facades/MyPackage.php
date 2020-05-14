@@ -4,7 +4,7 @@ namespace :uc:vendor\:uc:package\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Field:uc:package extends Facade
+class :uc:package extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class Field:uc:package extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'field:uc:package';
+        return ':uc:package';
     }
 }

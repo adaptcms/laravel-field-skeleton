@@ -4,7 +4,7 @@ namespace Adaptcms\:uc:vendor\:uc:package;
 
 use Adaptcms\Fields\Field;
 
-class Field:uc:package extends Field
+class :uc:package extends Field
 {
   /**
   * Get Value

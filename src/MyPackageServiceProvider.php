@@ -4,7 +4,7 @@ namespace :uc:vendor\:uc:package;
 
 use Illuminate\Support\ServiceProvider;
 
-class Field:uc:packageServiceProvider extends ServiceProvider
+class :uc:packageServiceProvider extends ServiceProvider
 {
   /**
    * Perform post-registration booting of services.
@@ -35,8 +35,8 @@ class Field:uc:packageServiceProvider extends ServiceProvider
     $this->mergeConfigFrom(__DIR__.'/../config/:lc:package.php', ':lc:package');
 
     // Register the service the package provides.
-    $this->app->singleton('field:uc:package', function ($app) {
-      return new Field:uc:package;
+    $this->app->singleton(':uc:package', function ($app) {
+      return new :uc:package;
     });
   }
 
@@ -48,7 +48,7 @@ class Field:uc:packageServiceProvider extends ServiceProvider
   public function provides()
   {
     return [
-      'field:uc:package'
+      ':uc:package'
     ];
   }
 
