@@ -13,12 +13,6 @@ class :uc:packageServiceProvider extends ServiceProvider
    */
   public function boot()
   {
-    // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', ':lc:vendor');
-    // $this->loadViewsFrom(__DIR__.'/../resources/views', ':lc:vendor');
-    $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-    $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-    $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
-
     // Publishing is only necessary when using the CLI.
     if ($this->app->runningInConsole()) {
       $this->bootForConsole();
@@ -67,21 +61,6 @@ class :uc:packageServiceProvider extends ServiceProvider
     $this->publishes([
         __DIR__.'/../config/:lc:package.php' => config_path(':lc:package.php'),
     ], ':lc:package.config');
-
-    // Publishing the views.
-    /*$this->publishes([
-        __DIR__.'/../resources/views' => base_path('resources/views/vendor/:lc:vendor'),
-    ], ':lc:package.views');*/
-
-    // Publishing assets.
-    /*$this->publishes([
-        __DIR__.'/../resources/assets' => public_path('vendor/:lc:vendor'),
-    ], ':lc:package.views');*/
-
-    // Publishing the translation files.
-    /*$this->publishes([
-        __DIR__.'/../resources/lang' => resource_path('lang/vendor/:lc:vendor'),
-    ], ':lc:package.views');*/
 
     // Register package commands.
     $commands = [];
