@@ -7,6 +7,24 @@ use Adaptcms\Fields\FieldType;
 class :uc:package extends FieldType
 {
   /**
+  * Rules applied when record is being stored with a post type.
+  *
+  * @var array
+  */
+  public $storeRules = [
+    //
+  ];
+
+  /**
+  * Rules applied when record is being updated with a post type.
+  *
+  * @var array
+  */
+  public $updateRules = [
+    //
+  ];
+
+  /**
   * Migration Command
   * When a module field, page field, or another variation is made
   * from this field, you must supply a valid migration string in string format.
@@ -25,11 +43,13 @@ class :uc:package extends FieldType
   /**
   * Get Value
   *
+  * @param mixed $value
+  *
   * @return mixed
   */
-  public function getValue()
+  public function getValue($value)
   {
-    return $this->value;
+    return $value;
   }
 
   /**
@@ -41,6 +61,6 @@ class :uc:package extends FieldType
   */
   public function setValue($value)
   {
-    $this->value = $value;
+    return $value;
   }
 }

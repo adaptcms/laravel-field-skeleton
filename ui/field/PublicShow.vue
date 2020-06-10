@@ -7,7 +7,8 @@
 <script>
 export default {
   props: [
-    'value'
+    'value',
+    'field'
   ]
 }
 </script>
