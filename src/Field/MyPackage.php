@@ -37,7 +37,7 @@ class :uc:package extends FieldType
   */
   public function migrationCommand()
   {
-    return '$table->string(":columnName")->nullable();'
+    return '$table->string(":columnName")->nullable();';
   }
 
   /**
