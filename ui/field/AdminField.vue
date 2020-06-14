@@ -13,7 +13,10 @@ export default {
   props: [
     'value',
     'field',
-    'errors'
+    'errors',
+    'formMeta',
+    'model',
+    'module'
   ],
 
   watch: {

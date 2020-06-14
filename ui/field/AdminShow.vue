@@ -8,7 +8,9 @@
 export default {
   props: [
     'value',
-    'field'
+    'field',
+    'model',
+    'module'
   ]
 }
 </script>

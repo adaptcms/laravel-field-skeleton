@@ -9,6 +9,7 @@ export default {
   props: [
     'value',
     'field',
+    'module',
     'errors'
   ],
 

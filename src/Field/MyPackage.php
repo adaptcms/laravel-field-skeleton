@@ -2,6 +2,8 @@
 
 namespace :uc:vendor\:uc:package\Field;
 
+use Illuminate\Support\Str;
+
 use Adaptcms\Fields\FieldType;
 
 class :uc:package extends FieldType
@@ -23,6 +25,11 @@ class :uc:package extends FieldType
   public $updateRules = [
     //
   ];
+
+  /**
+  * @var boolean
+  */
+  // public $shouldNotSetData = true;
 
   /**
   * Migration Command
@@ -63,4 +70,95 @@ class :uc:package extends FieldType
   {
     return $value;
   }
+
+  /**
+  * Format Name
+  *
+  * @param ModuleField $moduleField
+  *
+  * @return string
+  */
+  // public function formatName(ModuleField $moduleField)
+  // {
+  //   return Str::plural($moduleField->name);
+  // }
+
+  /**
+  * Format Column Name
+  *
+  * @param ModuleField $moduleField
+  *
+  * @return string
+  */
+  // public function formatColumnName(ModuleField $moduleField)
+  // {
+  //   return strtolower(Str::plural($moduleField->name));
+  // }
+
+  /**
+  * After Store
+  *
+  * @param ModuleField $moduleField
+  *
+  * @return void
+  */
+  // public function afterStore(ModuleField $moduleField)
+  // {
+  //
+  // }
+
+  /**
+  * With Form Meta
+  *
+  * @param ModuleField $moduleField
+  *
+  * @return array
+  */
+  // public function withFormMeta(ModuleField $moduleField)
+  // {
+  //   $meta = [];
+  //
+  //   return $meta;
+  // }
+
+  /**
+  * With Loaded Relationships
+  *
+  * @param Model $model
+  * @param ModuleField $moduleField
+  *
+  * @return Model
+  */
+  // public function withLoadedRelationships($model, ModuleField $moduleField)
+  // {
+  //   return $model;
+  // }
+
+  /**
+  * After Model Store
+  *
+  * @param Model       $model
+  * @param array       $formData
+  * @param ModuleField $moduleField
+  *
+  * @return void
+  */
+  // public function afterModelStore($model, array $formData, ModuleField $moduleField)
+  // {
+  //
+  // }
+
+  /**
+  * After Model Update
+  *
+  * @param Model       $model
+  * @param array       $formData
+  * @param ModuleField $moduleField
+  *
+  * @return void
+  */
+  // public function afterModelUpdate($model, array $formData, ModuleField $moduleField)
+  // {
+  //
+  // }
 }
