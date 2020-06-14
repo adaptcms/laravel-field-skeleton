@@ -5,6 +5,7 @@ namespace :uc:vendor\:uc:package\Field;
 use Illuminate\Support\Str;
 
 use Adaptcms\Fields\FieldType;
+use Adaptcms\Modules\Models\ModuleField;
 
 class :uc:package extends FieldType
 {
