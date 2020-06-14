@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import isEmpty from 'lodash.isempty'
+
 export default {
   props: [
     'value',
@@ -20,10 +22,11 @@ export default {
       }
     },
 
-    selected (newVal, oldVal) {
-      if (newVal !== oldVal) {
+    selected: {
+      handler: function (newVal, oldVal) {
         this.$emit('input', newVal)
-      }
+      },
+      deep: true
     }
   },
 
@@ -34,7 +37,7 @@ export default {
   },
 
   mounted () {
-    if (!this.selected) {
+    if (!isEmpty(this.value)) {
       this.selected = this.value
     }
   }
