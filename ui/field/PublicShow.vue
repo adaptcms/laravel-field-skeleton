@@ -10,7 +10,8 @@ export default {
     'value',
     'field',
     'model',
-    'module'
+    'module',
+    'action'
   ]
 }
 </script>

@@ -16,7 +16,8 @@ export default {
     'errors',
     'formMeta',
     'model',
-    'module'
+    'module',
+    'action'
   ],
 
   watch: {
