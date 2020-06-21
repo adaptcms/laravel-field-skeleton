@@ -111,7 +111,8 @@ class :uc:package extends FieldType
   /**
   * With Form Meta
   *
-  * @param ModuleField $moduleField
+  * @param \Illuminate\Http\Request $request
+  * @param ModuleField              $moduleField
   *
   * @return array
   */
