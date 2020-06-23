@@ -2,7 +2,17 @@
 
 namespace :uc:vendor\:uc:package;
 
+use Adaptcms\Base\Models\Package;
+
 class :uc:package
 {
-    // Build wonderful things
+  /**
+  * On Install
+  *
+  * @return void
+  */
+  public function onInstall()
+  {
+    Package::syncPackageFolder(get_class());
+  }
 }
