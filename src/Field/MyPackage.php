@@ -112,12 +112,12 @@ class :uc:package extends FieldType
   /**
   * With Form Meta
   *
-  * @param \Illuminate\Http\Request $request
-  * @param ModuleField              $moduleField
+  * @param Request     $request
+  * @param ModuleField $moduleField
   *
   * @return array
   */
-  // public function withFormMeta(ModuleField $moduleField)
+  // public function withFormMeta(Request $request, ModuleField $moduleField)
   // {
   //   $meta = [];
   //
