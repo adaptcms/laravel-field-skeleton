@@ -74,6 +74,40 @@ class :uc:package extends FieldType
   }
 
   /**
+  * Get Store Rules
+  *
+  * @param mixed $moduleField
+  * @param mixed $pageField
+  *
+  * @return array
+  */
+  // public function getStoreRules($moduleField = null, $pageField = null)
+  // {
+  //   $field = !empty($moduleField) ? $moduleField : $pageField;
+  //
+  //   $rules = [];
+  //
+  //   return $rules;
+  // }
+
+  /**
+  * Get Update Rules
+  *
+  * @param mixed $moduleField
+  * @param mixed $pageField
+  *
+  * @return array
+  */
+  // public function getUpdateRules($moduleField = null, $pageField = null)
+  // {
+  //   $field = !empty($moduleField) ? $moduleField : $pageField;
+  //
+  //   $rules = [];
+  //
+  //   return $rules;
+  // }
+
+  /**
   * Format Name
   *
   * @param ModuleField $moduleField
