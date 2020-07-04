@@ -5,8 +5,8 @@ namespace :uc:vendor\:uc:package\Field;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
+use Adaptcms\Base\Models\PackageField;
 use Adaptcms\Fields\FieldType;
-use Adaptcms\Modules\Models\ModuleField;
 
 class :uc:package extends FieldType
 {
@@ -76,15 +76,12 @@ class :uc:package extends FieldType
   /**
   * Get Store Rules
   *
-  * @param mixed $moduleField
-  * @param mixed $pageField
+  * @param PackageField $packageField
   *
   * @return array
   */
-  // public function getStoreRules($moduleField = null, $pageField = null)
+  // public function getStoreRules(PackageField $packageField)
   // {
-  //   $field = !empty($moduleField) ? $moduleField : $pageField;
-  //
   //   $rules = [];
   //
   //   return $rules;
@@ -93,15 +90,12 @@ class :uc:package extends FieldType
   /**
   * Get Update Rules
   *
-  * @param mixed $moduleField
-  * @param mixed $pageField
+  * @param PackageField $packageField
   *
   * @return array
   */
-  // public function getUpdateRules($moduleField = null, $pageField = null)
+  // public function getUpdateRules(PackageField $packageField)
   // {
-  //   $field = !empty($moduleField) ? $moduleField : $pageField;
-  //
   //   $rules = [];
   //
   //   return $rules;
@@ -110,35 +104,35 @@ class :uc:package extends FieldType
   /**
   * Format Name
   *
-  * @param ModuleField $moduleField
+  * @param PackageField $packageField
   *
   * @return string
   */
-  // public function formatName(ModuleField $moduleField)
+  // public function formatName(PackageField $packageField)
   // {
-  //   return Str::plural($moduleField->name);
+  //   return Str::plural($packageField->name);
   // }
 
   /**
   * Format Column Name
   *
-  * @param ModuleField $moduleField
+  * @param PackageField $packageField
   *
   * @return string
   */
-  // public function formatColumnName(ModuleField $moduleField)
+  // public function formatColumnName(PackageField $packageField)
   // {
-  //   return strtolower(Str::plural($moduleField->name));
+  //   return strtolower(Str::plural($packageField->name));
   // }
 
   /**
   * After Store
   *
-  * @param ModuleField $moduleField
+  * @param PackageField $packageField
   *
   * @return void
   */
-  // public function afterStore(ModuleField $moduleField)
+  // public function afterStore(PackageField $packageField)
   // {
   //
   // }
@@ -146,12 +140,12 @@ class :uc:package extends FieldType
   /**
   * With Form Meta
   *
-  * @param Request     $request
-  * @param ModuleField $moduleField
+  * @param Request      $request
+  * @param PackageField $packageField
   *
   * @return array
   */
-  // public function withFormMeta(Request $request, ModuleField $moduleField)
+  // public function withFormMeta(Request $request, PackageField $packageField)
   // {
   //   $meta = [];
   //
@@ -161,12 +155,12 @@ class :uc:package extends FieldType
   /**
   * With Loaded Relationships
   *
-  * @param Model $model
-  * @param ModuleField $moduleField
+  * @param Model        $model
+  * @param PackageField $packageField
   *
   * @return Model
   */
-  // public function withLoadedRelationships($model, ModuleField $moduleField)
+  // public function withLoadedRelationships($model, PackageField $packageField)
   // {
   //   return $model;
   // }
@@ -174,41 +168,41 @@ class :uc:package extends FieldType
   /**
   * After Model Store
   *
-  * @param Model       $model
-  * @param Request     $request
-  * @param ModuleField $moduleField
+  * @param Model        $model
+  * @param Request      $request
+  * @param PackageField $packageField
   *
   * @return void
   */
-  // public function afterModelStore($model, Request $request, ModuleField $moduleField)
+  // public function afterModelStore($model, Request $request, PackageField $packageField)
   // {
-  //   $this->afterModelSave($model, $request, $moduleField);
+  //   $this->afterModelSave($model, $request, $packageField);
   // }
 
   /**
   * After Model Update
   *
-  * @param Model       $model
-  * @param Request     $request
-  * @param ModuleField $moduleField
+  * @param Model        $model
+  * @param Request      $request
+  * @param PackageField $packageField
   *
   * @return void
   */
-  // public function afterModelUpdate($model, Request $request, ModuleField $moduleField)
+  // public function afterModelUpdate($model, Request $request, PackageField $packageField)
   // {
-  //   $this->afterModelSave($model, $request, $moduleField);
+  //   $this->afterModelSave($model, $request, $packageField);
   // }
 
   /**
   * After Model Save
   *
-  * @param Model       $model
-  * @param Request     $request
-  * @param ModuleField $moduleField
+  * @param Model        $model
+  * @param Request      $request
+  * @param PackageField $packageField
   *
   * @return void
   */
-  // public function afterModelSave($model, Request $request, ModuleField $moduleField)
+  // public function afterModelSave($model, Request $request, PackageField $packageField)
   // {
   //
   // }
